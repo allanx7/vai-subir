@@ -2,15 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face  {
-    font-family: 'android';
-    src:url(../fontes/idroid.otf) format(opentype)
-   
-}
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
 
 :root {
@@ -102,16 +98,54 @@ padding: 10px;
 
 nav > a {
     text-decoration: none;
-    padding: 5px;
+    padding: 8px;
     color: #ffffff;
 
 }
 
-nav > a:hover {
-    background-color: var(--cor3);
-    color: #063d1e;
-    border-radius: 5px;
-    transition-duration: .5s;
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+li a i {
+    font-size: 16px;
+    transition: 0.5s ease;
+}
+
+.fa-solid {
+    color: snow;
+}
+
+.github i {
+    color: #ffffff;
+}
+
+
+.fa-newspaper {
+    color: rgba(240, 248, 255, 0.753);
+}
+
+.fa-house {
+    color: #ffffff80;
+}
+
+/* ia fez isso pra mim ↓*/
+.insta i {
+    background: linear-gradient(
+        45deg,
+        #F58529,
+        #DD2A7B,
+        #8134AF,
+        #515BD4
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+li a:hover i  {
+transform: translateY(-5px) scale(1.15);
 }
 
 main {
@@ -179,21 +213,19 @@ aside {
 }
 
 aside > ul {
-   columns: 2;
-  
+    columns: 2;
+   
 }
 
 li {
    display:flex;
-   
-   
 }
 
 
 footer {
     text-align: center;
     background-color: #063d1e;
-    padding: 2px;
+    padding: 7px;
     margin-top: 33px;
     color: white;
 }
@@ -204,7 +236,7 @@ color: brown;
 
 footer > p > a {
     text-decoration: none;
-    color: rgb(42, 42, 170);
+    color: rgba(75, 75, 184, 0.596);
 }
 
 
@@ -222,7 +254,6 @@ div.video > iframe {
   position: absolute;
   top: 5%;
   left: 5%;
-
   width: 90%;
   height: 90%;
 }
